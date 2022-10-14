@@ -1,12 +1,14 @@
 import React, {Component} from "react";
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from './img/logo.png'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Inicio', href: '#', current: true },
+  { name: 'Ubicación', href: '#', current: false },
+  { name: 'Servicios', href: '#', current: false },
+  { name: 'Habitaciones', href: '#', current: false },
+  { name: 'Contacto', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,6 +17,16 @@ function classNames(...classes) {
 
 class Navbar extends Component {
     render(){ 
+        const logos1 = {
+            width: '70px',
+            height: '70px', 
+        };
+
+        const logos2 = {
+            width: '70px',
+            height: '70px',
+        };
+
         return (
             <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
@@ -32,20 +44,23 @@ class Navbar extends Component {
                         )}
                         </Disclosure.Button>
                     </div>
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+                    <div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start mx-5">
                         <div className="flex flex-shrink-0 items-center">
                         <img
-                            className="block h-8 w-auto lg:hidden"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            className="block h-8 w-auto lg:hidden mt-3"
+                            src={logo}
                             alt="Your Company"
+                            style={logos1}
                         />
                         <img
-                            className="hidden h-8 w-auto lg:block"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            className="hidden h-8 w-auto lg:block mt-3"
+                            src={logo}
                             alt="Your Company"
+                            style={logos2}
                         />
                         </div>
-                        <div className="hidden sm:ml-6 sm:block">
+                        <div className="hidden sm:ml-6 sm:block mt-5">
                         <div className="flex space-x-4">
                             {navigation.map((item) => (
                             <a
@@ -63,17 +78,18 @@ class Navbar extends Component {
                         </div>
                         </div>
                     </div>
+
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button
+                        {/* <button
                         type="button"
                         className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                         >
                         <span className="sr-only">View notifications</span>
                         <BellIcon className="h-6 w-6" aria-hidden="true" />
-                        </button>
+                        </button> */}
 
                         {/* Profile dropdown */}
-                        <Menu as="div" className="relative ml-3">
+                        {/* <Menu as="div" className="relative ml-3">
                         <div>
                             <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="sr-only">Open user menu</span>
@@ -126,7 +142,7 @@ class Navbar extends Component {
                             </Menu.Item>
                             </Menu.Items>
                         </Transition>
-                        </Menu>
+                        </Menu> */}
                     </div>
                     </div>
                 </div>
