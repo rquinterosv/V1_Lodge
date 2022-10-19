@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React, {Component} from "react";
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import img1 from './img/img1.jpg';
