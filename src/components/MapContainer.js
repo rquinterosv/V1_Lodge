@@ -2,8 +2,8 @@ import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '700px',
+  height: '300px'
 };
 
 const center = {
@@ -19,6 +19,11 @@ function MapContainer() {
 
   const [map, setMap] = React.useState(null)
 
+  const OPTIONS = {
+    minZoom: 4,
+    maxZoom: 13,
+  }
+
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
@@ -33,7 +38,7 @@ function MapContainer() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        options= {OPTIONS}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >

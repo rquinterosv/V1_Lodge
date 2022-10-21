@@ -33,10 +33,10 @@ export default function Example() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href="https://lodgelascascadas.cl/"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-verde px-8 py-3 text-base font-medium text-azul hover:bg-azul hover:text-verde md:py-4 md:px-10 md:text-lg"
                   >
-                    Ubicación
+                    Reservar
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
