@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import img1 from './img/img1.jpg';
-import img3 from './img/img3.jpg';
-import img4 from './img/img4.jpg';
+// import img1 from './img/img1.jpg';
+// import img3 from './img/img3.jpg';
+import img4 from '../img/img4.jpg';
 
 
 const navigation = [

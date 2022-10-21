@@ -1,7 +1,6 @@
 import React,{Component} from "react";
 import MapContainer from "./MapContainer";
-import img4 from './img/img4.jpg';
-import letras from './img/letras.png'
+import letras from '../img/letras.png'
 
 class Info extends Component {
     render(){
@@ -18,7 +17,7 @@ class Info extends Component {
                                 <img src={letras} alt="letras lodge"></img>
 
                                 <h3 className="text-base text-azul md:text-lg mt-6">
-                                Cercano a las atracciones turísticas más visitadas en la zona, ofrecemos 20 habitaciones con vista al lago Llanquihue y un ambiente tranquilo para disfrutar la tranquilidad del Sur de Chile. </h3>
+                                Cercano a las atracciones turísticas más visitadas en la zona, ofrecemos 20 habitaciones con vista al lago Llanquihue y un ambiente natural para disfrutar la tranquilidad del Sur de Chile. </h3>
 
                                 <div class="mt-5">
                                     <a
