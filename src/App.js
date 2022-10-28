@@ -7,6 +7,7 @@ import Service from './components/Service';
 import Product from './components/Product';
 import MapContainer  from './components/MapContainer'
 import 'flowbite';
+import TripAdvisor from './components/Tripadvisor';
 
 function App() {
   return (
@@ -16,11 +17,14 @@ function App() {
       <div>
         <Info />
       </div>
-      <div>
+      <div className='m-5'>
           <Service />
       </div>
-      <div>
+      <div className='m-5'>
           <Product />
+      </div>
+      <div>
+        <TripAdvisor />
       </div>
       <Footer /></>
   );

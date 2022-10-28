@@ -5,7 +5,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import img3 from './img/img3.jpg';
 import img4 from '../img/img4.jpg';
 
-
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },

@@ -5,12 +5,12 @@ import 'flowbite';
 class Product extends Component {
     render(){
         return(
-            <div className="card card-side bg-base-100 shadow-xl p-5">
+            <div className="card card-side  bg-gray-100 shadow-xl p-5">
 
                 <div className="card-body">
                     <h2 className="card-title">New movie is released!</h2>
                     <p>Click the button to watch on Jetflix app.</p>
-                    <div className="card-actions justify-end">
+                    <div className="card-actions justify-start">
                     <button className="btn btn-primary">Watch</button>
                     </div>
                 </div>
