@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import img1 from '../img/img1.jpg';
 import ser1 from '../img/ser1.png'
+import 'tw-elements';
 
 class Carousel1 extends Component {
     render(){
@@ -43,6 +44,9 @@ class Carousel1 extends Component {
                         </span>
                     </button>
                 </div>
+
+                <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
             </>
 
         )

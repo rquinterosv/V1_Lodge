@@ -19,7 +19,7 @@ class TripAdvisor extends Component {
 </div>
 
 
-<script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=460&amp;locationId=8095678&amp;lang=es_CL&amp;rating=true&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+<script async src="https://www.tripadvisor.com/WidgetEmbed-cdsratingsonlynarrow?amp;locationId=17821239&border=true&uniq=350&lang=en_US&display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
             </>
         )
     }
